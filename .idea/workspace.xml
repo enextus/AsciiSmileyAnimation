@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="489d4b41-cfd0-4c88-b522-e59239d856c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mycompany/AsciiSmileyAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arraycreator/ArrayCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/arraycreator/ArrayCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/mycompany/AsciiSmileyAnimationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mycompany/AsciiSmileyAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mycompany/AsciiSmileyAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/mycompany/AsciiSmileyAnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/mycompany/AsciiSmileyAnimationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -123,6 +125,21 @@
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
       <method v="2" />
+    </configuration>
+    <configuration name="AsciiSmileyAnimationTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AsciiSmileyAnimation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mycompany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mycompany" />
+      <option name="MAIN_CLASS_NAME" value="org.mycompany.AsciiSmileyAnimationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AsciiSmileyAnimationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayCreator" />
@@ -264,6 +281,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AsciiSmileyAnimationTest (1)" />
         <item itemvalue="Application.AsciiSmileyAnimation (1)" />
         <item itemvalue="JUnit.AsciiSmileyAnimationTest.testCreateDoubleArray" />
         <item itemvalue="JUnit.AsciiSmileyAnimationTest" />
@@ -297,7 +315,7 @@
       <workItem from="1699220337884" duration="370000" />
       <workItem from="1699220723540" duration="267000" />
       <workItem from="1699221008156" duration="342000" />
-      <workItem from="1699221367279" duration="568000" />
+      <workItem from="1699221367279" duration="1256000" />
     </task>
     <servers />
   </component>

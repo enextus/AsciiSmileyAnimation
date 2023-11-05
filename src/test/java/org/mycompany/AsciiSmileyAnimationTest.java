@@ -1,55 +1,39 @@
 package org.mycompany;
 
-public class AsciiSmileyAnimationTest {
-/*
-    @Test
-    public void testCreateIntegerArray() {
-        Integer[] intArray = AsciiSmileyAnimation.createArray(Integer.class, 10);
-        assertNotNull(intArray);
-        assertEquals(10, intArray.length);
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+class AsciiSmileyAnimationTest {
+    private AsciiSmileyAnimation animation;
+
+    @BeforeEach
+    void setUp() {
+        animation = new AsciiSmileyAnimation();
     }
 
     @Test
-    public void testCreateStringArray() {
-        String[] stringArray = AsciiSmileyAnimation.createArray(String.class, 5);
-        assertNotNull(stringArray);
-        assertEquals(5, stringArray.length);
+    void testInitialState() {
+        assertTrue(animation.isEyeOpen, "Initially, the eye should be open.");
     }
 
     @Test
-    public void testCreateDoubleArray() {
-        Double[] doubleArray = AsciiSmileyAnimation.createArray(Double.class, 8);
-        assertNotNull(doubleArray);
-        assertEquals(8, doubleArray.length);
+    void testToggleEyeState() {
+        animation.isEyeOpen = !animation.isEyeOpen;
+        assertFalse(animation.isEyeOpen, "After toggling, the eye should be closed.");
+    }
+
+    // Example test cases that may not directly test GUI, but the underlying logic
+
+    // This set of tests would ideally check for the content of the smiley
+    // But for simplicity, let's assume we are just checking the eye state representation
+    @Test
+    void testSmileyOpenContainsO() {
+        assertTrue(animation.smileyOpen.contains("O"), "Open eyes should contain 'O'.");
     }
 
     @Test
-    public void testArrayElementsAreNullAfterCreation() {
-        Integer[] intArray = AsciiSmileyAnimation.createArray(Integer.class, 3);
-        assertNull(intArray[0]);
-        assertNull(intArray[1]);
-        assertNull(intArray[2]);
+    void testSmileyClosedContainsDash() {
+        assertTrue(animation.smileyClosed.contains("-"), "Closed eyes should contain '-'.");
     }
-
-    @Test
-    public void testCreateArrayWithZeroSize() {
-        String[] stringArray = AsciiSmileyAnimation.createArray(String.class, 0);
-        assertNotNull(stringArray);
-        assertEquals(0, stringArray.length);
-    }
-
-    @Test
-    public void testCreateArrayWithNegativeSize() {
-        assertThrows(NegativeArraySizeException.class, () -> {
-            AsciiSmileyAnimation.createArray(String.class, -1);
-        });
-    }
-
-    @Test
-    public void testCreateArrayWithNullClass() {
-        assertThrows(NullPointerException.class, () -> {
-            AsciiSmileyAnimation.createArray(null, 10);
-        });
-    }*/
 
 }
