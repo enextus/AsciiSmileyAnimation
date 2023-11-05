@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.arraycreator</groupId>
-    <artifactId>ArrayCreator</artifactId>
+    <groupId>org.mycompany</groupId>
+    <artifactId>AsciiSmileyAnimation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -101,6 +101,7 @@
                 <version>3.11.0</version>
                 <configuration>
                     <compilerArgs>
+<!--                        <arg>-Xlint:-unchecked</arg> &lt;!&ndash; Здесь указано подавление предупреждений &ndash;&gt;-->
                         <arg>-Xlint:unchecked</arg>
                     </compilerArgs>
                 </configuration>
@@ -110,7 +111,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.arraycreator.ArrayCreator</mainClass>
+                            <mainClass>org.mycompany.AsciiSmileyAnimation</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -136,7 +137,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.arraycreator.ArrayCreator</mainClass>
+                            <mainClass>org.mycompany.AsciiSmileyAnimation</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
