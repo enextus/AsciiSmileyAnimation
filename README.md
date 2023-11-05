@@ -1,0 +1,3 @@
+# AsciiSmileyAnimation
+AsciiSmileyAnimation
+:)
