@@ -4,32 +4,44 @@ import javax.swing.*;
 import java.awt.*;
 
 public class AsciiSmileyAnimation extends JPanel {
-    private Rectangle leftEye;
-    private Rectangle rightEye;
+    private final Rectangle leftEye;
+    private final Rectangle rightEye;
     private static final int DIAMETER = 700; // Увеличенный размер
     private static final Font FONT = new Font("Monospaced", Font.BOLD, 24); // Увеличенный размер шрифта
     String smileyOpen = """
-        +------------+
-        |            |
-        |  O     O  |
-        |            |
-        |            |
-        |     __     |
-        |            |
-        |            |
-        +------------+
-        """;
+                 .---.
+                /_____\\__
+                (/6.6\\)
+                (  _  )
+                ,'---',
+               /   _   \\
+              /\\/ (_) \\/\\
+              \\ | (_) | /
+               \\|     |/
+                |_____|
+                |  |  |
+                \\__|__/
+                 |_|_|
+                _|_|_|_
+               (___|___)
+                  """;
     String smileyClosed = """
-        +------------+
-        |            |
-        |  -     -  |
-        |            |
-        |            |
-        |     __     |
-        |            |
-        |            |
-        +------------+
-        """;
+                   .---.
+                  /_____\\__
+                  (/6.6\\)
+                  (  _  )
+                  ,'---',
+                 /       \\
+                /\\/ |_| \\/\\
+                \\ |   | | /
+                 \\|     |/
+                  |_____|
+                  |  |  |
+                  \\__|__/
+                   |_|_|
+                  _|_|_|_
+                 (___|___)
+                    """;
     boolean isEyeOpen = true;
 
     public AsciiSmileyAnimation() {
@@ -44,24 +56,11 @@ public class AsciiSmileyAnimation extends JPanel {
         }).start();
     }
 
-
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         drawAsciiSmiley(g, isEyeOpen ? smileyOpen : smileyClosed);
     }
-
-/*    private void drawAsciiSmiley(Graphics g, String smiley) {
-        g.setFont(FONT);
-        FontMetrics fm = g.getFontMetrics();
-        int x = (getWidth() - fm.stringWidth(smiley.split("\n")[0])) / 2; // Предполагается, что все строки одинаковой длины
-        int y = (getHeight() - fm.getHeight() * smiley.split("\n").length) / 2 + fm.getAscent();
-
-        for (String line : smiley.split("\n")) {
-            g.drawString(line, x, y);
-            y += fm.getHeight();
-        }
-    }*/
 
     private void drawAsciiSmiley(Graphics g, String smiley) {
         g.setFont(FONT);
