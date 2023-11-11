@@ -28,7 +28,7 @@ class AsciiSmileyAnimationTest {
     // But for simplicity, let's assume we are just checking the eye state representation
     @Test
     void testSmileyOpenContainsO() {
-        assertTrue(animation.smileyOpen.contains("6"), "Open eyes should contain '6'.");
+        assertTrue(animation.smileyOpen.contains("0"), "Open eyes should contain '0'.");
     }
 
     @Test

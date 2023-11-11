@@ -11,7 +11,7 @@ public class AsciiSmileyAnimation extends JPanel {
     String smileyOpen = """
                  .---.
                 /_____\\__
-                (/6.6\\)
+                (/0.0\\)
                 (  _  )
                 ,'---',
                /   _   \\
@@ -28,7 +28,7 @@ public class AsciiSmileyAnimation extends JPanel {
     String smileyClosed = """
                    .---.
                   /_____\\__
-                  (/6.6\\)
+                  (/0.0\\)
                   (  _  )
                   ,'---',
                  /       \\
@@ -47,8 +47,8 @@ public class AsciiSmileyAnimation extends JPanel {
     public AsciiSmileyAnimation() {
         setPreferredSize(new Dimension(DIAMETER, DIAMETER));
         // Initialize the eye rectangles (You'll need to adjust the size and position accordingly)
-        leftEye = new Rectangle(290, 270, 30, 30);
-        rightEye = new Rectangle(370, 270, 30, 30);
+        leftEye = new Rectangle(350, 180, 15, 15);
+        rightEye = new Rectangle(380, 180, 15, 15);
 
         new Timer(500, e -> {
             isEyeOpen = !isEyeOpen;
@@ -81,7 +81,6 @@ public class AsciiSmileyAnimation extends JPanel {
             y += fm.getHeight();
         }
     }
-
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
